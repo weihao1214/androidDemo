@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".chapter02.ScreenActivity"></activity>
+        <activity android:name=".chapter02.IconActivity"></activity>
+        <activity android:name=".chapter02.CaptureActivity" />
+        <activity android:name=".chapter02.ScaleActivity" />
+        <activity android:name=".chapter02.ClickActivity" />
+        <activity android:name=".chapter02.BbsActivity" />
+        <activity android:name=".chapter02.MarqueeActivity" />
+        <activity android:name=".chapter02.ScrollActivity" />
+        <activity android:name=".chapter02.GravityActivity" />
+        <activity android:name=".chapter02.MarginActivity" />
+        <activity android:name=".chapter02.ScreenActivity" />
         <activity android:name=".chapter02.ColorActivity" />
         <activity android:name=".chapter02.PxActivity" />
         <activity android:name=".chapter02.Chapter02Activity" />
