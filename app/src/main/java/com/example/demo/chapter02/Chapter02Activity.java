@@ -12,6 +12,7 @@ import com.example.demo.R;
 public class Chapter02Activity extends AppCompatActivity implements View.OnClickListener {
 
     private Intent intent;
+    private Intent intent1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,10 @@ public class Chapter02Activity extends AppCompatActivity implements View.OnClick
         btn_capture.setOnClickListener(this);
         Button btn_icon = findViewById(R.id.btn_icon);
         btn_icon.setOnClickListener(this);
+        findViewById(R.id.btn_state).setOnClickListener(this);
+        findViewById(R.id.btn_shape).setOnClickListener(this);
+        findViewById(R.id.btn_nine).setOnClickListener(this);
+        findViewById(R.id.btn_calculator).setOnClickListener(this);
     }
 
     @Override
@@ -106,6 +111,25 @@ public class Chapter02Activity extends AppCompatActivity implements View.OnClick
                 startActivity(intent);
             }
             break;
+            case R.id.btn_state: {
+                Intent intent = new Intent(this, StateActivity.class);
+                startActivity(intent);
+            }
+            break;
+            case R.id.btn_shape: {
+                Intent intent = new Intent(this, ShapeActivity.class);
+                startActivity(intent);
+            }
+            break;
+            case R.id.btn_nine: {
+                Intent intent = new Intent(this, NineActivity.class);
+                startActivity(intent);
+            }
+            break;
+            case R.id.btn_calculator: {
+                Intent intent = new Intent(this, CalculatorActivity.class);
+                startActivity(intent);
+            }
         }
     }
 }
